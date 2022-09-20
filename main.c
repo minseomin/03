@@ -4,12 +4,15 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	char text;
+	int a,b;
+	float div;
 	
-	printf("input a character :");
-	scanf("%c", &text);
+	scanf("%d %d", &a,&b);
 	
-	printf("the next character of %c (%d) is %c (%d) |n", text, text, text+1, text+1);
+	div = (float)a/b;
+	
+	
+	printf("%d/%d=%f",a,b,div);
 	
 	return 0;
 }
